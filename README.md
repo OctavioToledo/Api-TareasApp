@@ -1,4 +1,4 @@
-##Task Management API
+--##Task Management API
 #Descripción
 Esta es una API para una aplicación de gestión de tareas, desarrollada en Java utilizando Spring Boot y siguiendo la arquitectura hexagonal. La API permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en las tareas y está conectada a una base de datos MySQL.
 
@@ -25,31 +25,31 @@ MySQL 8 o superior
 Maven 3.6 o superior
 Instalación
 Clona el repositorio:
---
+
 bash
 Copiar código
 git clone https://github.com/OctavioToledo/Api-TareasApp.git
 
 #Configura la base de datos:
 
-#SQL
+-SQL
 
 CREATE DATABASE tasks;
 
 Configura el archivo application.properties en src/main/resources:
---
+
 properties
 Copiar código
 spring.datasource.url=jdbc:mysql://localhost:3306/tasks
 spring.datasource.username= tu_usuario
 spring.datasource.password= tu_contraseña
 spring.jpa.hibernate.ddl-auto=update
---
+
 
 #Uso de la API
 Endpoints
 
-Crear una Tarea
+-Crear una Tarea
 URL: /api/tasks
 Método: POST
 Cuerpo:
@@ -60,16 +60,16 @@ Copiar código
   "description": "Descripción de la tarea",
   "completed": true/false
 }
---
-Obtener todas las Tareas
+
+-Obtener todas las Tareas
 URL: /api/tasks
 Método: GET
---
-Obtener una Tarea por ID
+
+-Obtener una Tarea por ID
 URL: /api/tasks/{taskId}
 Método: GET
---
-Actualizar una Tarea
+
+-Actualizar una Tarea
 URL: /api/tasks/{taskId}
 Método: PUT
 Cuerpo:
@@ -80,7 +80,7 @@ Copiar código
   "description": "Descripción actualizada",
   "completed": true/false
 }
---
-Eliminar una Tarea
+
+-Eliminar una Tarea
 URL: /api/tasks/{taskId}
 Método: DELETE
