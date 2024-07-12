@@ -1,4 +1,4 @@
---
+
 Task Management API
 --
 #Descripción
@@ -6,6 +6,7 @@ Task Management API
 Esta es una API para una aplicación de gestión de tareas, desarrollada en Java utilizando Spring Boot y siguiendo la arquitectura hexagonal. La API permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en las tareas y está conectada a una base de datos MySQL.
 
 #Diseño
+--
 Arquitectura Hexagonal
 La arquitectura hexagonal, también conocida como arquitectura de puertos y adaptadores, tiene como objetivo permitir la separación de preocupaciones y facilitar el mantenimiento y la evolución del software. En esta API, la arquitectura se estructura de la siguiente manera:
 
