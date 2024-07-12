@@ -1,6 +1,8 @@
-#Task Management API
-
+--
+Task Management API
+--
 #Descripción
+--
 Esta es una API para una aplicación de gestión de tareas, desarrollada en Java utilizando Spring Boot y siguiendo la arquitectura hexagonal. La API permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en las tareas y está conectada a una base de datos MySQL.
 
 #Diseño
