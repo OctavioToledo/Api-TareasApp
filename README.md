@@ -8,14 +8,20 @@ Esta es una API para una aplicación de gestión de tareas, desarrollada en Java
 #Diseño
 --
 Arquitectura Hexagonal
+
 La arquitectura hexagonal, también conocida como arquitectura de puertos y adaptadores, tiene como objetivo permitir la separación de preocupaciones y facilitar el mantenimiento y la evolución del software. En esta API, la arquitectura se estructura de la siguiente manera:
 
 Dominio: Contiene las entidades y las reglas de negocio.
+
 Aplicación: Contiene los servicios y la lógica de aplicación.
+
 Infraestructura: Contiene los adaptadores secundarios (por ejemplo, la implementación de repositorios).
+
 Entrada(in)/Salida(out): Contiene los adaptadores primarios (por ejemplo, controladores REST).
 
+
 #Tecnologías Utilizadas
+--
 Java 17
 Spring Boot 3
 MySQL
@@ -23,6 +29,7 @@ JPA/Hibernate
 Maven
 
 Configuración del Proyecto
+--
 Prerrequisitos
 JDK 17 o superior
 MySQL 8 o superior
@@ -35,7 +42,7 @@ Copiar código
 git clone https://github.com/OctavioToledo/Api-TareasApp.git
 
 #Configura la base de datos:
-
+--
 -SQL
 
 CREATE DATABASE tasks;
@@ -51,6 +58,7 @@ spring.jpa.hibernate.ddl-auto=update
 
 
 #Uso de la API
+--
 Endpoints
 
 -Crear una Tarea
